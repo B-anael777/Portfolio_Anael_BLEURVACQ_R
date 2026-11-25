@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Anael BLEURVACQ</title>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 65px; /* espace pour la nav fixe */
+        line-height: 1.6;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* --- IMAGE DE FOND --- */
+    #background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* --- NAVIGATION FIXE ET CENTRÉE --- */
+    nav.violet-gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        background: linear-gradient(to right, #c852ff, #0057ff);
+    }
+
+    nav a {
+        color: white;
+        margin: 0 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    header.violet-gradient {
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+        background: linear-gradient(to right, #c852ff, #0057ff);
+        color: white;
+    }
+
+    .photo-profil img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid white;
+    }
+
+    h1, h2, h3, h4 {
+        margin: 10px 0;
+    }
+
+    main {
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto;
+    }
+
+    section {
+        margin-bottom: 40px;
+        scroll-margin-top: 80px;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.7); /* fond semi-transparent */
+        backdrop-filter: blur(10px); /* flou */
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        transition: background 0.3s;
+    }
+
+    .btn.violet-gradient {
+        background: linear-gradient(to right, #c852ff, #0057ff);
+    }
+
+    .btn.violet-gradient:hover {
+        background: linear-gradient(to right, #0057ff, #c852ff);
+    }
+
+    footer.violet-gradient {
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+        background: linear-gradient(to right, #c852ff, #0057ff);
+        color: white;
+    }
+
+    .procedure-buttons a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .placeholder {
+        color: #555;
+        font-style: italic;
+    }
+
+    video {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .ecole-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .ecole-link img {
+        width: 200px;
+        height: auto;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- IMAGE DE FOND -->
+<img id="background" src="photo_de_fond.jpg" alt="Fond du portfolio">
+
+<!-- NAVIGATION -->
+<nav class="violet-gradient">
+    <a href="#cv">CV</a>
+    <a href="#rapport-stage">Stage 2026</a>
+    <!-- <a href="#lettre-motivation">Lettre de motivation</a> -->
+    <a href="#resume-bts">Résumé BTS SIO SLAM</a>
+    <a href="#projets">Projets informatiques</a>
+    <a href="#ecole">Site de l'école</a>
+    <a href="#procedures">Procédures informatiques</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header class="violet-gradient">
+    <div class="photo-profil">
+        <img src="photo.png.png" alt="Photo de Anael BLEURVACQ">
+    </div>
+    <h1>Mon Portfolio - Anael BLEURVACQ</h1>
+</header>
+
+<main>
+
+    <section id="parcours-professionnel">
+        <h2>Parcours professionnel</h2>
+
+        <div class="experience">
+            <h3>Stage de 3e - Décembre 2021</h3>
+            <p>CNRS – Laboratoire APC – Paris</p>
+        </div>
+
+        <div class="experience">
+            <h3>Stage de 1ere - Octobre 2021</h3>
+            <p>Société Générale – La Défense</p>
+        </div>
+
+        <div class="experience">
+            <h3>Bac STI2D SIN (2023–2025)</h3>
+        </div>
+
+        <div class="experience">
+            <h3>BTS SIO SLAM en alternance (Septembre 2025 à novembre 2025)</h3>
+        </div>
+        <div class="experience">
+            <h3>BTS SIO SLAM en initial (En cours)</h3>
+        </div>
+    </section>
+
+    <section id="competences-techniques">
+        <h2>Compétences techniques</h2>
+        <p class="placeholder">
+            HTML, CSS, SQL (bases de données), C++, C#, Python<br>
+            SolidWorks – SketchUp<br>
+            Suite Office<br>
+            Hardware (montage PC, dépannage)<br>
+            Réseaux (configuration routeurs, cablâge, Wi-Fi)<br>
+            Software en général<br>
+        </p>
+    </section>
+
+    <section id="cv">
+        <h2>Mon CV</h2>
+        <a href="CV-BLEURVACQ-Anaël.pdf" class="btn violet-gradient" download>Télécharger CV</a>
+    </section>
+
+    <section id="rapport-stage">
+        <h2>Mon rapport de stage BTS SIO SLAM première année (18 mai au 26 juin 2026)</h2>
+        <p>Modification du site officiel GESTIUT de l'université de Ville d'Avray : partie élève et prof<br>
+            (exemple : Pronote, École direct, ENT, netypareo)</p>
+        <a href="BLEURVACQ-Anael-SIO1-rapport de stage.pdf" class="btn violet-gradient" download>Télécharger le rapport</a>
+    </section>
+
+    <!-- <section id="lettre-motivation">
+        <h2>Lettre de motivation</h2>
+        <a href="Lettre de motivation Anaël BLEURVACQ .pdf" class="btn violet-gradient" download>Télécharger la lettre</a>
+    </section> -->
+
+    <section id="resume-bts">
+        <h2>Résumé BTS SIO SLAM</h2>
+        <a href="https://institutionsaintaspais.fr/formations/bts-services-informatiques-aux-organisations-option-slam-et-sisr/" target="_blank" class="btn violet-gradient">
+            Voir le site du BTS SIO SLAM
+        </a>
+        <p>Le BTS SIO (Services Informatiques aux Organisations) est une formation de 2 ans après le bac qui prépare aux métiers de l’informatique en entreprise.</p>
+        <p>Elle forme à l’administration des systèmes et réseaux ou au développement d’applications, selon l’option choisie (SISR ou SLAM).</p>
+        <p>Les étudiants y apprennent la programmation, les bases de données, la sécurité informatique, la gestion de projets et le support aux utilisateurs.</p>
+        <p>La formation est très professionnalisante, avec des stages en entreprise et permet soit une insertion rapide dans le monde du travail, soit une poursuite d’études.</p>
+    </section>
+
+    <section id="projets">
+        <h2>Projets informatiques réalisés</h2>
+
+        <div class="projet">
+            <h3>Robot suiveur de ligne en Arduino (Première STI2D)</h3>
+            <p class="placeholder">Robot programmé en première STI2D.</p>
+            <video controls>
+                <source src="1000046943.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="projet">
+            <h3>Site internet avec caméra connectée (Terminale STI2D)</h3>
+            <p class="placeholder">Site web permettant de surveiller un aquarium avec caméra et contrôle de la température.</p>
+        </div>
+    </section>
+
+    <section id="ecole">
+        <h2>Site du lycée/campus</h2>
+        <a href="https://institutionsaintaspais.fr/" target="_blank" class="ecole-link">
+            <img src="logo_SA.png" alt="Logo école">
+            https://institutionsaintaspais.fr/
+        </a>
+    </section>
+
+    <section id="procedures">
+        <h2>Procédures informatiques</h2>
+        <div class="procedure-buttons">
+            <a href="Procédure 1.docx" class="btn violet-gradient" download>Procédure 1</a>
+            <a href="Procédure 2.docx" class="btn violet-gradient" download>Procédure 2</a>
+            <a href="Procédure 3.docx" class="btn violet-gradient" download>Procédure 3</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Mail : anael.bleurvacq777@gmail.com</p>
+        <p>Téléphone : 07 61 88 97 21</p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/ana%C3%ABl-b-2777a72a1/" target="_blank">Voir mon profil</a> ou <a href="https://www.linkedin.com/in/anael-bleurvacq/" target="_blank">Voir mon profil</a></p>
+    </section>
+
+</main>
+
+<footer class="violet-gradient">
+    &copy; 2026 Anael BLEURVACQ | Tous droits pas réservés
+</footer>
+
+</body>
+</html>
+
