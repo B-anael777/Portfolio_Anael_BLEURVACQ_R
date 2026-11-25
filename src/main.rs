@@ -13,7 +13,7 @@ const INDEX_HTML: &str = page::INDEX_HTML;
 
 fn main() {
     let port = env::var("PORT").unwrap_or_else(|_| "8080".to_string());
-    let address = format!("127.0.0.1:{port}");
+    let address = format!("0.0.0.0:{port}");
     let listener = TcpListener::bind(&address).expect("Impossible d'ouvrir le serveur HTTP");
 
     println!("Portfolio Rust disponible sur http://{address}");
